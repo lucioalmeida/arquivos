@@ -4,6 +4,10 @@ apt-get update
 
 apt-get -y upgrade
 
+apt-get -y dist-upgrade
+
+locale-gen pt_BR.UTF-8
+
 apt-get -y install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
 
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
@@ -16,3 +20,5 @@ add-apt-repository \
 apt-get update
 
 apt-get -y  install docker-ce docker-ce-cli containerd.io
+
+dpkg-reconfigure locales
