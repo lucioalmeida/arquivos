@@ -1,3 +1,4 @@
+set SEARCH_PATH to utilizador_0000000011,public;
 SELECT
        'Atendimento'   AS entidade,
        A.ID                                             id_entidade,
